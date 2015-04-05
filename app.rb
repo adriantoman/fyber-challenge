@@ -1,4 +1,9 @@
 require 'sinatra/base'
+require 'sinatra/flash'
+require 'pp'
+require 'httparty'
+require 'digest/sha1'
+require 'sinatra/partial'
 require_relative 'routes/init'
 require_relative 'helpers/init'
 require_relative 'models/init'
@@ -8,8 +13,11 @@ class MyApp < Sinatra::Base
   enable :sessions
   set :session_secret, 'super secret'
 
+  register Sinatra::Partial
+
   configure do
     set :app_file, __FILE__
+    set :partial_template_engine, :erb
   end
 
   configure :development do

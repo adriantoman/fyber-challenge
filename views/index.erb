@@ -1,7 +1,20 @@
 <%= erb :my_partial %>
-<form>
-  <input type="text" name="post[uid]" />
-  <input type="text" name="post[pub0]" />
-  <input type="text" name="post[page]" />
-  <input type="submit" value="Submit">
+<form action="/make_call_to_fyber" method="post">
+  <div>
+    <label for="uid">UID:</label>
+    <input type="text" id="uid" name="uid" />
+  </div>
+  <div>
+    <label for="pub0">Pub0:</label>
+    <input type="text" id="pub0" name="pub0" />
+  </div>
+  <div>
+    <label for="page">Page:</label>
+    <input type="text" id="page" name="page"/>
+  </div>
+
+  <div class="button">
+    <button type="submit">Send request</button>
+  </div>
 </form>
+<%= erb :flash %>
