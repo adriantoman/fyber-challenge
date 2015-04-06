@@ -1,3 +1,3 @@
-require_relative 'api_test'
+require_relative 'api'
 
 

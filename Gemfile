@@ -4,7 +4,7 @@ gem "thin"
 gem "sinatra-flash"
 gem "sinatra-partial"
 gem "httparty"
-
+gem "rake"
 
 group :development do
   gem "awesome_print"
