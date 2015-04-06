@@ -55,8 +55,8 @@ View all available rake commands
 
 Run the server
 
-    shotgun
+    rackup -o 0.0.0.0 -p 9292 config.ru
 
-Go to [http://127.0.0.1:9393](http://127.0.0.1:9393)
+Go to [http://127.0.0.1:9292](http://127.0.0.1:9292)
 
 
