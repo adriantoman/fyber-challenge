@@ -23,12 +23,12 @@ Folders Structure
       api.rb       # One or more routes related to some feature
 
     views/
-      flash.erb   # Partial layout for showing errors
-      header.erb  # Partial for page header
-      index.erb   # Main page for basic form
-      no_offers.erb  # Partial for showing no effers page
+      flash.erb         # Partial layout for showing errors
+      header.erb        # Partial for page header
+      index.erb         # Main page for basic form
+      no_offers.erb     # Partial for showing no effers page
       offer_element.erb # Partial for showing offer element
-      offers.erb # The main page for showing offers
+      offers.erb        # The main page for showing offers
 
     test/         
       models       # minitest
